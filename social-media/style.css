@@ -4,7 +4,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #191970, #4b0082);
+  background: linear-gradient(to bottom, #1e3c72, #000000);
 }
 
 header {
@@ -36,7 +36,6 @@ nav {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-color: #4b0082;
   cursor: pointer;
   z-index: 999;
 }
@@ -52,7 +51,7 @@ nav {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: #4b0082;
+  background-color: #1e3c72;
   align-items: center;
   justify-content: center;
   z-index: 999;
@@ -85,7 +84,7 @@ nav {
   justify-content: center;
 }
 .dev-img {
-  width: 60%;
+  max-width: 20rem;
   border-radius: 2rem;
   box-shadow: 0.4rem 0.4rem #e1e5f2;
 }
@@ -101,13 +100,9 @@ nav {
   text-decoration: none;
   margin: 0 1rem;
   padding: 1rem;
-  background: #e0ffff;
-  color: #191970;
+  background: white;
   font-family: "Capriola", cursive;
-}
-.social-links a:hover {
-  color: white;
-  background-color: #191970;
+  box-shadow: 2px 2px black;
 }
 .hero-about {
   color: white;
@@ -122,8 +117,11 @@ nav {
 
 .mobile-social-links {
   margin: 3rem;
+  display: flex;
 }
 .mobile-social-links a {
+  display: flex;
+
   background-color: transparent;
   background: #e0ffff;
   color: #191970;
@@ -132,12 +130,32 @@ nav {
   cursor: pointer;
   text-decoration: none;
   margin: 0 0.5rem;
-  padding: 0.5rem;
+  padding: 2rem;
+
   font-family: "Capriola", cursive;
 }
-.mobile-social-links a:hover {
-  color: white;
-  background-color: #191970;
+.mobile-social-links a img {
+  width: 2rem;
+  height: 2rem;
+}
+.social-links a img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.line {
+  position: relative;
+  display: none;
+  top: -2rem;
+  height: 80%;
+  margin-right: 4rem;
+  width: 0.1rem;
+  background-color: white;
 }
 @media screen and (min-width: 1024px) {
   .navlinks ul {
@@ -166,7 +184,7 @@ nav {
     top: 0;
   }
   .dev-img {
-    width: 40%;
+    max-width: 40%;
   }
   .hero-about {
     width: 50%;
@@ -181,6 +199,9 @@ nav {
   }
   .social-links {
     display: flex;
+  }
+  .line {
+    display: block;
   }
   footer {
     display: none;
