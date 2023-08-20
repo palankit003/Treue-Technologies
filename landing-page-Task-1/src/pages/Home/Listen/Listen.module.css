@@ -1,0 +1,73 @@
+.container {
+  padding: 0 0.5rem;
+  user-select: none;
+}
+.listen {
+  color: white;
+  border: 1px solid orangered;
+  font-size: 2rem;
+  font-family: "Anton", sans-serif;
+  box-shadow: 0.2rem 0.2rem 0px orangered;
+  margin: 2rem 0;
+  padding: 0 2rem;
+  width: fit-content;
+}
+.coverContainer {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: orangered;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-tap-highlight-color: transparent;
+}
+.coverContainer:hover .name {
+  animation: moveX 10s linear infinite;
+}
+
+.image {
+  width: 100%;
+  opacity: 0.5;
+}
+.image:hover {
+  opacity: 0.9;
+}
+.name {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  color: white;
+  padding: 0.25rem;
+  user-select: none;
+}
+@keyframes moveX {
+  0% {
+    transform: translateX(0%); /* Start position: move to the left from 100% */
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%); /* End position: move to the right from -100% */
+  }
+}
+.albumContainer {
+  width: 80%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .albumContainer {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+}

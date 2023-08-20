@@ -1,0 +1,103 @@
+.container {
+  background-color: white;
+  color: black;
+  margin: 0 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: "Anton", sans-serif;
+  z-index: 999;
+}
+.wrapper {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.662);
+}
+.btnSubtract,
+.btnAdd {
+  padding: auto;
+  width: 3rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+  margin: 0 1rem;
+  color: white;
+  font-size: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.btnSubtract:disabled,
+.btnAdd:disabled {
+  background-color: rgb(243, 150, 116);
+}
+.btnSubtract {
+  background-color: orangered;
+}
+.btnAdd {
+  background-color: orangered;
+}
+.notification {
+  position: absolute;
+  top: 10rem;
+  background-color: orangered;
+  padding: 1rem;
+  border-radius: 2rem;
+  animation: drop 1s;
+  color: white;
+  font-family: "Anton", sans-serif;
+}
+.null {
+  position: absolute;
+
+  font-family: "Anton", sans-serif;
+  top: 10rem;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 2rem;
+  animation: drop 1s;
+}
+.countContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+.select {
+  font-size: 2rem;
+}
+.submitCloseBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes drop {
+  from {
+    transform: translate(0, -10rem);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+.submit,
+.close {
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.close {
+  background-color: #333;
+  color: white;
+}
+.submit {
+  background-color: orangered;
+  color: white;
+}

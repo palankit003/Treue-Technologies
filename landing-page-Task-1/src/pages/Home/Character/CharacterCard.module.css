@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}
+.container:hover .name {
+  color: orangered;
+}
+.name {
+  font-size: 1.1rem;
+  font-family: "Anton", sans-serif;
+}
+.role {
+  color: gray;
+  font-size: 0.8rem;
+}
+.imageContainer {
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+.image {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+@media screen and (min-width: 1024px) {
+  .name {
+    font-size: 2rem;
+  }
+  .image:hover {
+    transform: scale(1.25);
+  }
+}

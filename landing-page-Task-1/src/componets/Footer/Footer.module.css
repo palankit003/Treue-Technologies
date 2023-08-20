@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 0;
+}
+.logoContainer {
+  font-family: "Lilita One";
+  font-size: 2rem;
+  display: flex;
+  user-select: none;
+}
+.seven {
+  color: orangered;
+}
+.formContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 1rem 0 1rem;
+}
+.formContainer input {
+  padding: 1rem;
+  outline: none;
+}
+.btnContainer {
+  margin: 2rem 0;
+}
+.btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: orangered;
+  box-shadow: 5px 5px white;
+  color: white;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px white;
+}
+.signUp {
+  color: white;
+  border: 1px solid orangered;
+  font-size: 2rem;
+  font-family: "Anton", sans-serif;
+  box-shadow: 0.2rem 0.2rem 0px orangered;
+  margin: 2rem 0;
+  padding: 0 2rem;
+  width: fit-content;
+}
+@media screen and (min-width: 1024px) {
+  .formContainer {
+    margin-left: 2rem;
+  }
+  .emailBtnContainer {
+    display: flex;
+    height: 1rem;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+}

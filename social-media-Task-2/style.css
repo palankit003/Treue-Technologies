@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Capriola&family=Dancing+Script&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, #1e3c72, #000000);
+}
+
+header {
+  position: relative;
+  height: 20vh;
+  color: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.logo {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2rem;
+}
+.navlinks {
+  display: none;
+  font-family: "Capriola", cursive;
+}
+
+.mobile-menu-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+}
+.mobile-menu-icon div {
+  width: 1.5rem;
+  height: 0.2rem;
+  background: white;
+  margin: 0.1rem 0;
+}
+
+.mobile-menu-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #1e3c72;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.mobile-menu-content.active {
+  display: flex;
+}
+.mobile-navlinks ul {
+  list-style: none;
+}
+.mobile-navlinks ul li {
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  position: relative;
+  height: 80vh;
+  top: -2rem;
+  flex-direction: column;
+  display: flex;
+  top: -5vh;
+  align-items: center;
+  justify-content: center;
+}
+.dev-img {
+  max-width: 20rem;
+  border-radius: 2rem;
+  box-shadow: 0.4rem 0.4rem #e1e5f2;
+}
+.social-links {
+  margin: 3rem;
+  display: none;
+}
+.social-links a {
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 1rem;
+  background: white;
+  font-family: "Capriola", cursive;
+  box-shadow: 2px 2px black;
+}
+.hero-about {
+  color: white;
+  font-family: "Capriola", cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+.hero-about :nth-child(2) {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.mobile-social-links {
+  margin: 3rem;
+  display: flex;
+}
+.mobile-social-links a {
+  display: flex;
+
+  background-color: transparent;
+  background: #e0ffff;
+  color: #191970;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  padding: 1rem;
+
+  font-family: "Capriola", cursive;
+}
+.mobile-social-links a img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.social-links a img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.line {
+  position: relative;
+  display: none;
+  top: -2rem;
+  height: 80%;
+  margin-right: 4rem;
+  width: 0.1rem;
+  background-color: white;
+}
+@media screen and (min-width: 1024px) {
+  .navlinks ul {
+    list-style: none;
+    display: flex;
+  }
+  .navlinks ul li {
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+  .navlinks {
+    display: block;
+  }
+  .mobile-menu-icon {
+    display: none;
+  }
+  .mobile-menu-content.active {
+    display: none;
+  }
+  .hero {
+    height: 80vh;
+    flex-direction: row;
+  }
+  .img-container {
+    width: 50%;
+    top: 0;
+  }
+  .dev-img {
+    max-width: 40%;
+  }
+  .hero-about {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    text-align: start;
+  }
+  .hero-about :nth-child(2) {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+  .social-links {
+    display: flex;
+  }
+  .line {
+    display: block;
+  }
+  footer {
+    display: none;
+  }
+}
