@@ -55,6 +55,6 @@ For any inquiries or further information, feel free to reach out to me:
 
 - Name: Ankit Pal
 - Email: palankit003.ap@gmail.com
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/palankit003/)
+- LinkedIn: [Ankit Pal](https://www.linkedin.com/in/ankitpal003/)
 
 I appreciate your interest and hope you find our projects valuable!
