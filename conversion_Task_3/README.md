@@ -1,27 +1,53 @@
-# React + TypeScript + Vite
+# Unit Converter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Live link: https://palankit003.github.io/conversion/
 
-Currently, two official plugins are available:
+The Unit Converter App is a web-based tool built using React, TypeScript, Vite, and modular CSS to provide a seamless and intuitive way to convert various units across different measurement categories. Whether you're dealing with length, mass, volume, time, temperature, area, speed, or energy conversions, this app has got you covered. Its user-friendly interface and efficient functionality make it a handy tool for quick unit conversions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Multiple Measurement Categories:** The app supports conversions for a wide range of measurement categories, including length, mass, volume, time, temperature, area, speed, and energy.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Real-Time Conversion:** As you input values, the app dynamically updates the converted values in real-time, providing instant feedback for your conversions.
 
-- Configure the top-level `parserOptions` property like this:
+- **Interactive Interface:** The user interface is designed to be intuitive and easy to use, ensuring a seamless experience for users of all skill levels.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- **Responsive Design:** The app is built with responsiveness in mind, allowing you to use it on various devices, from desktops to tablets and mobile devices.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Modular CSS:** The app's styles are organized using modular CSS, making it easy to maintain and extend the styling without causing conflicts.
+
+- **TypeScript Powered:** TypeScript is used to add static typing to the React components, ensuring better code quality and reducing runtime errors.
+
+- **Vite for Fast Development:** The Vite build tool is employed for its quick development and hot module replacement capabilities, allowing for a smooth and efficient development experience.
+
+- **PNPM for Package Management:** The project uses PNPM as the package manager for its efficient and disk-space-saving dependency management.
+
+## Getting Started
+
+Follow these steps to get the Unit Converter App up and running on your local machine:
+
+1. **Clone the Repository:** Start by cloning this repository to your local machine using the following command:
+
+   ```
+   git clone https://github.com/palankit003/Treue-Technologies.git
+   ```
+
+2. **Navigate to the Project Directory:** Change into the project directory using:
+
+   ```
+   cd Treue-Technologies/conversion_Task_3
+   ```
+
+3. **Install Dependencies:** Install the required dependencies using PNPM:
+
+   ```
+   pnpm install
+   ```
+
+4. **Run the Development Server:** Start the development server using the following command:
+
+   ```
+   pnpm run dev
+   ```
+
+   This will launch the app, and you can access it by opening your browser and navigating to `http://localhost:3000`.
